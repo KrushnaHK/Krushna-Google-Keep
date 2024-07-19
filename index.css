@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+.navbar {
+  padding: 2px;
+  width: 100%;
+  display: flex;
+}
+
+.menu-icon {
+  margin-top: 15px;
+  color: black;
+  font-size: 22px;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.logo-img {
+  margin-left: 15px;
+  height: 45px;
+  margin-top: 15px;
+}
+
+.heading {
+  margin-left: 10px;
+  color: grey;
+  font-family: "Roboto";
+  text-decoration: underline;
+  margin-top: 10px;
+}
+
+.logo-container {
+  display: flex;
+}
+
+.search-container {
+  margin-left: 100px;
+  background-color: #f0f0f0;
+  width: 1000px;
+  height: 50px;
+  border-radius: 12px;
+  display: flex;
+}
+
+.search-icon {
+  margin-top: 15px;
+  font-size: 18px;
+  margin-left: 10px;
+  color: #a3a39e;
+}
+
+.search-input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  margin-left: 25px;
+  font-weight: 500;
+  font-family: "Roboto";
+}
+
+.setting-icon {
+  font-size: 30px;
+  margin-left: 100px;
+  margin-top: 10px;
+}
+
+.user-container {
+  height: 35px;
+  width: 35px;
+  background-color: #38afc9;
+  border-radius: 50%;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+
+.user-name-initail {
+  color: white;
+  text-align: center;
+  margin-top: 3px;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.below-container {
+  display: flex;
+}
+
+.navbar-items-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+  text-align: left;
+  flex-wrap: wrap;
+}
+
+.nav-button {
+  width: 250px;
+  padding: 12px;
+  font-size: 15px;
+  text-align: left;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-icon {
+  font-size: 20px;
+  margin-right: 35px;
+  color: #6b6b69;
+}
+
+.selected {
+  border-width: 1px;
+  background-color: #fcebb8;
+  border-left: none;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  outline: none;
+  border: none;
+}
+
+.selected-icon {
+  color: black;
+}
+
+.main-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+}
+
+.note-input-container {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  align-self: center;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.input-el {
+  border: none;
+  outline: none;
+  margin-bottom: 5px;
+  height: 35px;
+  font-size: 15px;
+}
+
+.button-container {
+  text-align: right;
+}
+
+.save-button {
+  background-color: #05cff7;
+  color: white;
+  height: 30px;
+  width: 80px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.notes {
+  list-style-type: none;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.note-container {
+  min-width: 225px;
+  height: 125px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: gray;
+  padding-left: 15px;
+  padding-right: 10px;
+  border-radius: 10px;
+  margin-left: 30px;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 0;
+}
+
+.save-button {
+  color: white;
+  background-color: #4c63b6;
+  font-family: "Roboto";
+  font-size: 18px;
+  border-width: 0px;
+  border-radius: 4px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.title {
+  font-family: "Roboto";
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.note-text {
+  font-family: "Roboto";
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.archieved-container {
+  width: 100%;
+  display: flex;
+  margin-left: 100px;
+}
+
+.archieved-icon {
+  margin-bottom: 0;
+  margin-right: 10px;
+}
+
+.archieved-list {
+  list-style-type: none;
+}
+
+.archieve-heading {
+  font-family: "Italic";
+  font-size: 30px;
+  font-weight: 500;
+  text-decoration: underline;
+  margin-left: 100px;
+}
+
+.deleted-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-left: 100px;
+}
+
+.delete-note-list {
+  list-style-type: none;
+}
+
+.bin-heading-container {
+  align-self: center;
+  margin-left: 450px;
+}
+
+.bin-heading {
+  font-family: "Italic";
+  font-size: 18px;
+  font-weight: 500;
+}

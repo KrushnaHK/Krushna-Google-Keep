@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/ce526e7994.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <i class="fa-solid fa-bars menu-icon"></i>
+      <div class="logo-container">
+        <img
+          src="https://res.cloudinary.com/djifdyfkd/image/upload/v1721295016/keep_2020q4_48dp_lo00wr.png"
+          class="logo-img"
+          alt="logo image"
+        />
+        <h1 class="heading">Keep</h1>
+      </div>
+      <div class="search-container">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input type="search" class="search-input" placeholder="Search" />
+      </div>
+      <i class="fa-solid fa-gear setting-icon"></i>
+      <div class="user-container">
+        <h1 class="user-name-initail">K</h1>
+      </div>
+    </nav>
+    <hr class="horizontal-line" />
+
+    <div class="below-container">
+      <div class="navbar-items-container">
+        <button
+          class="nav-button"
+          onclick="display('sectionNote')"
+          id="noteButton"
+        >
+          <i class="fa-solid fa-lightbulb nav-icon" id="noteButtonIcon" n></i>
+          Notes
+        </button>
+        <button
+          class="nav-button"
+          onclick="display('sectionReminder')"
+          id="reminderButton"
+        >
+          <i class="fa-regular fa-bell nav-icon" id="reminderButtonIcon"></i>
+          Reminder
+        </button>
+        <button class="nav-button" id="editLabelButton">
+          <i class="fa-solid fa-pen nav-icon" id="editLabelButtonIcon"></i>
+          Edit Label
+        </button>
+        <button
+          class="nav-button"
+          onclick="display('sectionArchieved')"
+          id="archievedButton"
+        >
+          <i
+            class="fa fa-archive nav-icon"
+            aria-hidden="true"
+            id="archievdButtonIcon"
+          ></i>
+          Archived
+        </button>
+        <button
+          class="nav-button"
+          onclick="display('sectionBin')"
+          id="binButton"
+        >
+          <i class="fa-solid fa-trash-can nav-icon" id="binButtonIcon"></i>
+          Bin
+        </button>
+      </div>
+
+      <div id="sectionNote">
+        <div class="main-container">
+          <div class="note-input-container">
+            <input
+              type="text"
+              placeholder="Title"
+              class="input-el"
+              id="noteInputTitel"
+            />
+            <input
+              type="text"
+              placeholder="Take a note.."
+              class="input-el"
+              id="noteInputText"
+            />
+            <div class="button-container">
+              <button class="save-button" id="onAddNoteButton">Add</button>
+            </div>
+          </div>
+          <ul class="notes" id="notesContainer"></ul>
+          <button class="save-button" id="saveNoteButton">Save</button>
+        </div>
+      </div>
+
+      <div id="sectionReminder"></div>
+
+      <div id="sectionArchieved">
+        <h1 class="archieve-heading">Archieved Notes</h1>
+        <div class="archieved-container">
+          <ul class="archieved-list" id="archeivedList"></ul>
+        </div>
+      </div>
+
+      <div id="sectionBin">
+        <div class="bin-heading-container">
+          <h1 class="bin-heading">
+            Notes in the Recycle Bin are deleted after 7 days.
+          </h1>
+        </div>
+        <div class="deleted-container">
+          <ul class="delete-note-list" id="deleltedList"></ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+    <script
+      type="text/javascript"
+      src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"
+    ></script>
+  </body>
+</html>
